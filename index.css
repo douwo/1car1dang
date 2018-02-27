@@ -1,0 +1,139 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.title{
+    color:rgb(0, 140, 255);
+    border: 0;
+    border-left: 3px;
+    border-color:rgb(0, 140, 255);
+    border-style: solid;
+    padding-left: 8px;
+}
+
+.first,.last{
+    display: flex;
+    display: -webkit-flex;
+    margin-right: 10px
+}
+.first>div{
+    height: 350px;
+    margin: 10px 10px;
+}
+.first>div:nth-child(1){
+    flex-grow:2;
+    position: relative;
+}
+.first>div:nth-child(1)>div{
+    width:80%;margin:0 auto;height:75%;margin-top:20px;
+    background:url(img02.png) no-repeat center;
+    background-size: cover;
+}
+.first>div:nth-child(1)>p{
+    color: rgb(0, 140, 255);
+    font-family: '仿宋','宋体';
+    font-size: 18px;
+}
+.first>div:nth-child(2){
+    position: relative;
+    width: 40%;
+}
+.first>div:nth-child(3){
+    flex-grow:1;
+}
+.first>div:nth-child(3)>div{
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+.circle{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 120px;
+    width: 120px;
+    background: #1486DE;
+    margin: 0 auto;
+    margin-top:60px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 1vh #167BCD,0 0 0 1vh #1486DE;
+    color: #fff;
+    font-size: 3vh;
+}
+.circle + div{
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+.first>div:nth-child(3)>div:nth-child(2) > ul{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    top: 25px;
+}
+.first>div:nth-child(3)>div:nth-child(2) > ul > li{
+    margin-top: 40px;
+    width: 75%;
+    position: relative;
+    font-size: 14px;
+}
+.first>div:nth-child(3)>div:nth-child(2) > ul > li>span{
+   display: inline-block;
+   float: right;
+   color: peru;
+}
+.last>div{
+    height: 400px;
+    margin: 10px 10px;
+}
+.last>div:nth-child(1){
+    flex-grow:1;
+    padding-left: 2vw;
+}
+.users-messages{
+    list-style: none;
+    padding: 0;
+}
+.users-messages>li{
+    margin: 15px 0;
+}
+.last>div:nth-child(2){
+    width: 65%;
+}
+.last>div:nth-child(3){
+    flex-grow:2;
+    font-size: 14px;
+}
+.last>div:nth-child(3)>a{
+    float: right;
+    position: relative;
+    right: 20px;
+    text-decoration: none;
+}
+.last>div:nth-child(3)>a:link{
+    color: rgb(0, 140, 255);
+}
+.last>div:nth-child(3)>a:visited{
+    color: rgb(0, 140, 255);
+}
+.last>div:nth-child(3)>a:hover{
+    color: rgb(78, 155, 255);
+}
+.last>div:nth-child(3)>a:active{
+    color: rgb(0, 140, 255)
+}
+
+
+.last>div:nth-child(3)>div:nth-child(1){
+    position: relative;
+    left: 2vw;
+}
+.last>div:nth-child(3)>div:nth-child(1)>p{
+    margin: 45px 0;
+    width: 85%
+}
